@@ -12,8 +12,10 @@ export default function Comment({
   const { register, handleSubmit, reset, formState } = useForm<commentProps>({
     defaultValues: { firstname: "", lastname: "", comment: "" },
   });
+
   const [userInput, setUserInput] = useState<commentProps[] | []>(
-    JSON.parse(localStorage.getItem(gameDetails.gameId.toString()) || "[]"),
+    gameDetails.gameId !== undefined &&
+      JSON.parse(localStorage.getItem(gameDetails.gameId.toString()) || "[]"),
   );
 
   //Affichage du formulaire
