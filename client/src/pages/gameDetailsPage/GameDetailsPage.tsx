@@ -11,7 +11,7 @@ export default function GameDetailsPage() {
   const gameDetails: gameDetailsType = useLoaderData() as gameDetailsType;
   const navigate = useNavigate();
   const handleClick = () => navigate(-1);
-
+  console.log(gameDetails);
   // Repositionne la page au niveau du header
   useEffect(() => {
     window.scrollTo(0, 100);

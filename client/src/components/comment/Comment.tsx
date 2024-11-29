@@ -14,8 +14,7 @@ export default function Comment({
   });
 
   const [userInput, setUserInput] = useState<commentProps[] | []>(
-    gameDetails.gameId !== undefined &&
-      JSON.parse(localStorage.getItem(gameDetails.gameId.toString()) || "[]"),
+    JSON.parse(localStorage.getItem(gameDetails.gameId.toString()) || "[]"),
   );
 
   //Affichage du formulaire
