@@ -1,5 +1,5 @@
 import logoBoarderLine from "../../assets/images/logo-boarder-line-big-transparent.png";
-import logoInstagram from "../../assets/images/logo-gnstagram.png";
+import logoInstagram from "../../assets/images/logo-instagram.png";
 import logoLinkedIn from "../../assets/images/logo-linkedin.png";
 import logoYouTube from "../../assets/images/logo-youtube.png";
 import style from "./footer.module.css";
